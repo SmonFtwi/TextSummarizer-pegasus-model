@@ -3,3 +3,4 @@ transformers
 torch
 pandas
 streamlit
+streamlit_option_menu
