@@ -3,5 +3,5 @@ numpy
 transformers ==4.26.1
 torch
 tensorflow
-streamlit
+streamlit == 1.20.0
 
