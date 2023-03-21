@@ -1,5 +1,5 @@
 
-transformers
+conda install -c huggingface transformers
 torch
 tensorflow
 streamlit
