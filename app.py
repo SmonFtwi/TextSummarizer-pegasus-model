@@ -32,10 +32,8 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 text_input = st.text_input("Enter some text:")
 
-
-with open('fine_tuned_model.pkl', 'rb') as f:
-    model = pickle.load(f)
-    tokenizer = AutoTokenizer.from_pretrained("google/pegasus-cnn_dailymail")
+model = AutoModelForSeq2SeqLM.from_pretrained("SmonF/YTFineTunePegasus")
+tokenizer = AutoTokenizer.from_pretrained("google/pegasus-cnn_dailymail")
 
 
 def generate_summary(text, max_length=200, min_length=30):
